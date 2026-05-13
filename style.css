@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+a{
+    color: #f8fafc;
+}
+body {
+    background: #0f172a;
+    color: #f8fafc;
+    line-height: 1.6;
+}
+
+
+.header2 {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("pic4.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.header {
+    width: 100%;
+    background: #111827;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.boder {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 30px;
+    background: #1f2937;
+    color: #facc15;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.boder:hover {
+    background: #facc15;
+    color: #111827;
+    transform: translateY(-3px);
+}
+
+
+.badge {
+    width: 140px;
+    height: 140px;
+    background: url("picture.jpg") center/cover no-repeat;
+    border-radius: 50%;
+    border: 4px solid #facc15;
+    margin: -70px auto 30px auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+.details{
+    background: #1e293b;
+    margin: 40px auto;
+    padding: 30px;
+    width: 85%;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    transition: 0.4s;
+}
+.A {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #facc15;
+    font-weight: 600;
+}
+.pic {
+    width: auto;            
+    height: 600px;           
+    display: block;          
+    margin: 20px auto 0;     
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    object-fit: cover;    
+
+}
+#B {
+    font-size: 60px;
+    font-weight: 700;
+    color: #facc15;
+    letter-spacing: 3px;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.8);
+}
+.bio {
+    background: #1e293b;
+    margin: 40px auto;
+    padding: 30px;
+    width: 85%;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    transition: 0.4s;
+}
+
+
+@media (max-width: 768px) {
+    #B {
+        font-size: 36px;
+    }
+
+
+    .bio {
+            width: 95%;
+            padding: 20px;
+        }
+}
