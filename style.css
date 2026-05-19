@@ -110,6 +110,33 @@ button,
     text-decoration: none;
     transition: 0.3s;
 }
+.chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    height: 180px;
+}
+
+.bar {
+    flex: 1;
+    background: linear-gradient(to top, #facc15, #fbbf24);
+    border-radius: 10px 10px 0 0;
+    transition: 0.3s;
+}
+
+.bar:hover {
+    opacity: 0.8;
+}
+
+.time{
+    display: flex;
+    justify-content: space-between;
+    }
+.days{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
 @media (max-width: 768px) {
@@ -122,5 +149,7 @@ button,
             width: 95%;
             padding: 20px;
         }
-    
+     .chart {
+        height: 140px;
+    }
 }
