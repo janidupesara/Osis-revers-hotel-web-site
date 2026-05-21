@@ -88,6 +88,9 @@ body {
     letter-spacing: 3px;
     text-shadow: 0 5px 15px rgba(0,0,0,0.8);
 }
+.details,
+.center_box,
+.book,
 .picboder,
 .bio {
     background: #1e293b;
@@ -97,6 +100,35 @@ body {
     border-radius: 20px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.5);
     transition: 0.4s;
+}
+.details:hover,
+.center_box:hover,
+.book:hover,
+.picboder:hover,
+.bio:hover {
+    transform: translateY(-8px);
+}
+.book input,
+.book select,
+.book textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.book input[type="submit"] {
+    background: #facc15;
+    color: #111827;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.book input[type="submit"]:hover {
+    background: white;
 }
 button,
 .back {
