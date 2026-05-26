@@ -168,6 +168,39 @@ button,
     display: flex;
     justify-content: space-between;
 }
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.centerbox{
+    border: 2px solid black;
+    border-radius: 10%;
+    width: 300px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.centerbox div{
+    width: 100%;
+}
+
+.centerbox label{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.centerbox input[type="text"]{
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
 
 
 
