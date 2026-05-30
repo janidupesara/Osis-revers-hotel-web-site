@@ -7,9 +7,34 @@
 
 <body>
 
+    <?php
+
+include 'connection.php';
+
+$message = ""; 
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $full_name = $conn->real_escape_string($_POST['full_name']);
+    $id_number = $conn->real_escape_string($_POST['id_number']);
+    $phone_number = $conn->real_escape_string($_POST['phone_number']);
+    $package = $conn->real_escape_string($_POST['package']);
+
+    $sql = "INSERT INTO booking (full_name, id_number, phone_number, package) 
+            VALUES ('$full_name', '$id_number', '$phone_number', '$package')";
+
+    if ($conn->query($sql) === TRUE) {
+        $message = "<p style='color: green; font-weight: bold;'>Booking successful!</p>";
+    } else {
+        $message = "<p style='color: red; font-weight: bold;'>Error: " . $conn->error . "</p>";
+    }
+    
+    $conn->close();
+}
+?>
   
     <div class="book">
-        <form>
+        <form method="post">
             <br>
             <h1> BOOK NOW</h1>
             <br>
