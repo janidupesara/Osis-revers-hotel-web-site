@@ -62,9 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </form>
     </div>
 
-     <div class="back">
-        <a href="about.html">back</a>
-    </div>
+<button onclick="window.location.href='about.html'">back</button>
     
 
 

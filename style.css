@@ -130,8 +130,7 @@ body {
 .book input[type="submit"]:hover {
     background: white;
 }
-button,
-.back {
+button{
     display: inline-block;
     padding: 10px 25px;
     margin-top: 20px;

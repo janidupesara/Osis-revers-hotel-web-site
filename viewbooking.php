@@ -76,12 +76,10 @@
         ?>
 
         <br>
-        <div class="back">
-            <a href="date.php">Back to Date Search</a>
-        </div>
-        <div class="back">
-            <a href="booknow.php">New Booking</a>
-        </div>
+<button onclick="window.location.href='date.php'">Back to Date Search</button>
+<button onclick="window.location.href='booknow.php'">New Booking</button>
+
+
     </div>
 
 </body>
